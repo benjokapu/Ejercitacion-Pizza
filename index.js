@@ -37,3 +37,11 @@ async function deleteById(id){
     }
     return await connection.query("DELETE FROM pizza WHERE id=?;",[pizza.id])
 }
+
+insert({
+    nombre: "Sprinfil",
+    libreGluten: false,
+    importe: 500,
+    description: "Contiene varios ingredientes muy ricos"
+});
+getAll();
